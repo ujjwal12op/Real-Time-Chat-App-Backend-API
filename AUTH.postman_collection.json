@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "c4c7e977-9610-4947-8733-dfd4b7a6fbba",
+		"name": "AUTH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25923479",
+		"_collection_link": "https://cloudy-space-614856.postman.co/workspace/chat-app~93d29836-2fde-43c8-bb57-382289f92556/collection/25923479-c4c7e977-9610-4947-8733-dfd4b7a6fbba?action=share&source=collection_link&creator=25923479"
+	},
+	"item": [
+		{
+			"name": "SIGNUP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\" : \"Manish Tiwari\",\r\n    \"email\" : \"Manish@gmail.com\",\r\n    \"password\" : \"1235678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\" : \"Manish@gmail.com\",\r\n    \"password\" : \"1235678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGOUT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CHECK AUTH",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/auth/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE PROFILE PICTURE",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET USERS",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET USER MESSAGE BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/messages/67e79ffce0b85c17ffee20d1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"messages",
+						"67e79ffce0b85c17ffee20d1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEND MESSAGE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/messages/67e79ffce0b85c17ffee20d1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"messages",
+						"67e79ffce0b85c17ffee20d1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
